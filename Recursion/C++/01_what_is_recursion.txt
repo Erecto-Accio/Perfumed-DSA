@@ -1,0 +1,1 @@
+When a function calls itself is called recursion. A base case is always needed for a recursion to stop you can call it base case or condition. This technique provides a way to break complicated problems down into simple problems which are easier to solve.
