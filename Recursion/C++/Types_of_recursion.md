@@ -102,6 +102,8 @@ int main() {
   fun(3);
   return 0;
 }
+// TIME : O(2^n)
+// SPACE : O(n)
 ```
 
 ![Lightbox](https://media.geeksforgeeks.org/wp-content/uploads/20190621015814/tree4.jpg)
