@@ -18,3 +18,4 @@ int main()
     int a = 5;
     cout << fun(a) << endl;
 }
+// OUTPUT OF THIS CODE : 25
