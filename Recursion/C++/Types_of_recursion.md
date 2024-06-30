@@ -42,7 +42,7 @@ int main() {
 ```
 
 ## ![Lightbox](https://media.geeksforgeeks.org/wp-content/uploads/20190621015455/tail1.jpg)
-
+---
 <a name="head-recursion"></a>
 
 ### Head Recursion
@@ -107,3 +107,33 @@ int main() {
 ```
 
 ![Lightbox](https://media.geeksforgeeks.org/wp-content/uploads/20190621015814/tree4.jpg)
+---
+
+### Indirect Recursion
+>In this recursion, there may be more than one functions and they are calling one another in a circular manner.
+
+````
+#include <iostream>
+using namespace std;
+void funB(int n);
+void funA(int n) {
+  if (n > 0) {
+    cout << n << " ";
+    funB(n - 1); // calling funB in funA
+  }
+}
+
+void funB(int n) {
+  if (n > 1) {
+    cout << n << endl;
+    funA(n / 2); // call funA in funB
+  }
+}
+
+int main() {
+  funA(20);
+  return 0;
+}
+````
+
+![Lightbox](https://media.geeksforgeeks.org/wp-content/uploads/20190608232223/Capture34.jpg)
